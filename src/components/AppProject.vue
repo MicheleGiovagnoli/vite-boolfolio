@@ -1,5 +1,5 @@
 <template>
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 18rem; height:100%;">
         <img v-if="project.cover_image" :src="`${this.store.baseUrl}/storage/${project.cover_image}`" class="card-img-top">
         <img v-else src="https://cdn.icon-icons.com/icons2/1462/PNG/512/120nophoto_100007.png" class="card-img-top p-5" />
         <div class="card-body">
