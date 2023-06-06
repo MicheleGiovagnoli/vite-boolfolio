@@ -8,7 +8,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item" v-for="(item, index) in menuItems" :key="index">
+                    <li class="nav-item p-3" v-for="(item, index) in menuItems" :key="index">
                         <router-link :to="{ name: item.routeName }">{{ item.label }}</router-link>
                     </li>
                 </ul>
@@ -32,8 +32,8 @@ export default {
                     routeName: 'Contact'
                 },
                 {
-                    label: 'PostList',
-                    routeName: 'PostList'
+                    label: 'ProjectList',
+                    routeName: 'ProjectList'
                 },
             ]
         }

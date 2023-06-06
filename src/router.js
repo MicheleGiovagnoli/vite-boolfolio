@@ -3,8 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 //importo i file che poi saranno le viste della mia single-page-application
 import AppHome from './pages/AppHome.vue';
 import AppContact from './pages/AppContact.vue';
-import PostList from './pages/PostList.vue';
-import SinglePost from './pages/SinglePost.vue';
+import ProjectList from './pages/ProjectList.vue';
+import SingleProject from './pages/SingleProject.vue';
 
 //Gestione delle pagine e caricamento di queste quando viene chiesto l'url
 const router = createRouter({
@@ -21,14 +21,14 @@ const router = createRouter({
             component: AppContact
         },
         {
-            path: '/postList',
-            name: 'PostList',
-            component: PostList
+            path: '/ProjectList',
+            name: 'ProjectList',
+            component: ProjectList
         },
         {
-            path: '/blog/:slug',
+            path: '/SingleProject/:slug',
             name: 'single-post',
-            component: SinglePost
+            component: SingleProject
         }
     ]
 });
